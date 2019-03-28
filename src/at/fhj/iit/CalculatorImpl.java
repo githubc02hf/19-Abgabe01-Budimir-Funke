@@ -7,7 +7,7 @@ public class CalculatorImpl implements Calculator {
   private List<Integer> values = new ArrayList<Integer>();
   @Override
     public int getMaximum() {
-      return 0;
+      return values.get(values.indexOf(Collections.max(values)));
     }
   @Override
     public int getMinimum() {
@@ -17,5 +17,9 @@ public class CalculatorImpl implements Calculator {
     public void addValue(int value) {
 	  this.values.add(value);
     }
+  
+  	public int sum() {
+  		return 0;
+  	}
   
 }
