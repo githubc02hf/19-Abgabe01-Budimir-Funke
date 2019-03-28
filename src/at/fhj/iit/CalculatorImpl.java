@@ -1,5 +1,6 @@
 package at.fhj.iit;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class CalculatorImpl implements Calculator {
@@ -10,10 +11,11 @@ public class CalculatorImpl implements Calculator {
     }
   @Override
     public int getMinimum() {
-      return 0;
+	  return values.get(values.indexOf(Collections.min(values)));
     }
   @Override
     public void addValue(int value) {
+	  this.values.add(value);
     }
   
 }
