@@ -18,8 +18,13 @@ public class CalculatorImpl implements Calculator {
 	  this.values.add(value);
     }
   
+  @Override
   	public int sum() {
-  		return 0;
+  		int sum = 0;
+  		for (int element: this.values) {
+  			sum += element;
+  		}
+  		return sum;
   	}
   
 }

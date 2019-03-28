@@ -11,6 +11,7 @@ public class Main {
 		calc.addValue(16);
 		System.out.println(calc.getMinimum());
 		System.out.println(calc.getMaximum());
+		System.out.println(calc.sum());
 
 		// add other integers
 
